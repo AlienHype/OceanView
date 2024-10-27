@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanView</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> 
+    <link rel="stylesheet" href="css/OceanView.css">
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <img src="img/logo2.png" alt="Image" class="tm-site-name">           
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#map2" class="tm-page-link active">
+                    <i class="fas fa-map tm-page-link-icon"></i>
+                    <span>Map</span>
+                </a>
+            </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                    <i class="fas fa-exclamation-triangle tm-page-link-icon"></i>
+                    <span>Awareness</span>
+                </a>
+            </li>            
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="map2" class="tm-page-content">
+            
+            <nav class="tm-black-bg tm-drinks-nav">
+             <!-- Map Navigation -->
+             <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                  <li>
+                      <a href="#" class="tm-tab-link active" data-id="map">
+                          <i class="fas fa-map"></i> Map
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+
+           <!-- Leaflet Map Section -->
+        <div id="map" class="tm-tab-content" style="height: 500px; width: 100%;"></div>
+
+      
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+       <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+      <!-- Place the chatbot icon below the map -->
+<div id="chatbot-container">
+  <i class="fas fa-comments chatbot-icon"></i>
+  <div id="chatbox" class="chatbox">
+    <div class="chatbox-header">
+      <span>Marine Life</span>
+      <button class="close-chatbox">&times;</button>
+    </div>
+    <div class="chatbox-body">
+      <div id="chatbox-messages" class="chatbox-messages"></div>
+      <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Ask me about marine life..." />
+      <button id="chatbot-send" class="chatbot-send">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+<script src="map.js"></script>
+
+            </div>
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About OceanView</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/sea.jpeg" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>Welcome to OceanView, your essential companion for navigating and exploring the beautiful coastal waters of Mauritius.</p>
+                  <p>Our mission is to support fishermen and skippers by providing a dynamic platform where you can easily mark and share important maritime locations.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">Our Visions</h2>
+                  <p>With our interactive map, you can pin and comment on various locations, helping you and others make the most of Mauritius' rich maritime environment.</p>                  
+                </div>                
+                <img src="img/map.jpeg" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>Our goal is to create a collaborative community of maritime professionals who can share valuable insights and enhance their seafaring experience.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/clean.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Keep the Ocean Clean</h2>
+                  <p class="tm-special-item-text">Maintaining the health of our oceans is crucial for marine life and the environment. Such as Dispose of Waste Properly,Participate in Cleanups.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/comunication.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Use the OceanView Website for Communication</h2>
+                  <p class="tm-special-item-text">Our platform offers various features to enhance your maritime experience and facilitate communication. Such as Pin and Share Locations,Comments.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/whales.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title"> Avoid Disturbing WhalesThird Special Item</h2>
+                  <p class="tm-special-item-text">Whales are majestic creatures that deserve our respect and protection.Keep a Safe Distance,Avoid Sudden Movements.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/concervation.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Promote Marine Conservation</h2>
+                  <p class="tm-special-item-text">Share information about the importance of keeping the ocean clean and respecting marine wildlife. </p>  
+                </div>
+              </div>                           
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Contact OceanView</h2>
+              <p>We’d love to hear from you! Whether you have questions, suggestions, or need assistance, feel free to reach out. Your feedback helps us enhance the OceanView experience for all fishermen and skippers.
+
+                Let’s navigate the waters together!</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form id="contact-form" onsubmit="sendEmail(event)">
+                <div class="tm-form-group">
+                    <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                    <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                    <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                    <button type="submit" class="tm-btn-primary tm-align-right">
+                        Submit
+                    </button>
+                </div>
+            </form>
+            
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init("RRT_L1ZakcPPkf323"); 
+                })();
+            
+                function sendEmail(event) {
+                    event.preventDefault(); 
+            
+                    const form = event.target;
+            
+                    emailjs.sendForm('service_6h9v5g4', 'template_f3j5do8', form)
+                        .then(function() {
+                            alert('Message sent successfully!');
+                            form.reset(); 
+                        }, function(error) {
+                            alert('Failed to send message. Please try again later.');
+                            console.error('EmailJS Error:', error);
+                        });
+                }
+            </script>
+            
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/OceanView.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        } 
+      });
+    });
+      
+  </script>
+</body>
+</html>
